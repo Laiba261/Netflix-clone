@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(15, 13, 13);
+}
+
+.main {
+    background-image: url("assets/bg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 1200px);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+    background-color: rgb(11, 8, 8);
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: rgb(204, 0, 0);
+    width: 114px;
+    position: Center;
+    z-index: 10;
+}
+
+
+nav button.btn {
+    background-color: white;
+    color: black;
+    padding: 3px 8px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+.hero {
+    font-family: 'martel sans' sans-serif;
+    height: 100% -62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23;
+    padding: 29px;
+    text-align: center;
+}
+
+.hero span:first-child {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero span:nth-child(2) {
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero span:nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(74, 73, 73);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(245, 243, 243);
+    border-radius: 4px;
+    border: 1PX solid white;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.main input {
+    padding: 7px 101px 8px 24px;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+}
+
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 30vw;
+}
+.secImg video {
+    position: absolute;
+    top: 51ps;
+    right: 0;
+    width: 30vw;
+
+}
+section.first div{
+    display: flex;
+    flex-direction: column;
+}
+section.first div:nth-child(1){
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+section.first div:nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+}
+/* ... (previous styles) ... */
+.faq {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq h2 {
+    color: white;
+    margin-bottom: 20px; /* Optional: Add some margin for spacing */
+}
+.accordation {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordation li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordation li label {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin: 2px;
+    cursor: pointer;
+    position: relative;
+    color: white; /* Added to make text white */
+}
+
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    color: white; /* Added to make text white */
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordation .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    color: white; /* Added to make text white */
+}
+
+/* Updated selector to target the adjacent label */
+input[type="radio"]:checked + label .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+input[type="radio"]:checked + label::after {
+    transform: rotateY(135deg);
+}
+.hero {
+    font-family: 'martel sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px; /* added "px" */
+    padding: 29px;
+    text-align: center;
+}
+
+.hero span:first-child {
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero span:nth-child(2) {
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero span:nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-button input {
+    padding: 5px; /* Add padding for better styling */
+}
+
+.hero-button button {
+    margin-left: 5px; /* Add margin between the input and the button */
+    padding: 8px 16px; /* Adjust padding for better styling */
+}
+.footer {
+    display: flex;
+    color: white;
+    max-width: 100%;
+    margin: auto;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.column a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    color: white;
+    text-align: center; /* Center the content horizontally */
+}
+
+footer h2 {
+    text-align: left; /* Align the h2 to the left */
+    max-width: 100%;
+    margin: 2px 10px; /* Adjust margin for spacing */
+}
+
+/* Centralize the second and third columns */
+.column:nth-child(2),
+.column:nth-child(3) {
+    margin: 0 auto;
+}
