@@ -22,7 +22,7 @@ _Add a screenshot here of your clone (optional)_
 
 ## 🚀 Live Demo
 
-Visit the live site: [Click here](https://yourusername.github.io/netflix-clone/)
+Visit the live site: [Click here]([https://yourusername.github.io/netflix-clone/](https://github.com/Laiba261/Netflix-clone/tree/main))
 
 ## 📁 Folder Structure
 
